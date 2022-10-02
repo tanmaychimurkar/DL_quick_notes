@@ -1,0 +1,2 @@
+For continuous random variables, we cannot define the probability of a random variable at an exact value, rather we
+define the probability for a particular interval.
