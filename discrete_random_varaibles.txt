@@ -30,7 +30,28 @@ until a head or a tail is observed.
 3) Binomial Distribution: The experiment associated with this type of distribution is when we keep flipping a coin
 and want to get the probability of seeing a head n times. This is given by nCk, a combinatorial counting approach.
 
-4)
+The PMF function cannot be used to define continuous random variables. For that, we have the Cumulative Distribution
+Function, CDF, and this works for all types of random variables.
+
+The CDF is defined on the lower bound of random variables, and is a step function while the PMF is always on the
+x-axis. The CDF is always a non-decreasing function.
+
+The average value of a random variable is defined as the `expectation` of the random variable. Expected value is
+defined as the weighted average of the range of a random variable. The intuition behind the expected value is that
+a random experiment is conducted N number of times, each experiment being independent, and the average value of the
+random variable for which the experiment is conducted N times is then called the expectation of the random variable.
+The formula for computing the expectation of a random variable is given by the range(i)*P(X == range(i)). This holds
+true across all the different probability distributions.
+
+The variance of a random variable can be defined as how far away from the expected value are the probability events.
+If the individual probability events are far away from the expected value of the random variable, then we say that the
+variance is high, or vice versa.
+
+The variance of a random variable X can be given by E(X^2) - (EX)^2, i.e., we compute the normal expectation first,
+and then we compute the expectation using the square of the events of the random variable.
+
+Variance of a random variable is not a linear operation, since we are subtracting the square of the random variable
+with the normal random variable expectation.
 
 
 
