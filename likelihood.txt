@@ -1,0 +1,10 @@
+The likelihood function determines how well does a particular function fit our data. This is usually the case when we
+have a bunch of data, let's say the housing prices and the houses being bought, we do not inherently know which
+distribution our data fits best into.
+
+The likelihood is the inverse of probability in this sense, since in the case of probability, we have the distribution
+and we make an estimate, but in likelihood, we have the data and we try to model the inherent distribution itself.
+
+We can assume that there is some likelihood function L that takes as input the set of parameters, and as output gives
+the probability that these parameters best fit our data. These parameters could be the weights that we assume in a
+linear regression model, and we could try to maximize them using the Likelihood function.

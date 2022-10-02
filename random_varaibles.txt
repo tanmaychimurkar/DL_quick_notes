@@ -1,0 +1,36 @@
+Random variables are underlying values that are determined by the underlying random experiment. Random variable can be
+thought of as a single instance of a random experiment that we want to find a probability estimate for. It is a function
+from the sample space to the real valued numbers, in that this variable tries to quantify what real value a random
+variable will get.
+
+There are two types of random variables, discrete and continuous.
+
+For every discrete random variable, we have a range defined, which is the mapping to the all numbers except rational.
+The range can thus be 0, 1, 2 if we choose to flip a coin twice.
+
+For a random variable, the probabilities of events {X = xk} are shown by the Probability Mass Function. The PMF is
+usually defined over the range of a random variable.
+
+We can use PMF to find the probability distribution of a discrete random variable. PMF itself is a probability measure,
+and is thus always between 0 and 1.
+
+The notion of independent events can be extended to independent random variables.
+
+There are a set of distributions that are frequently used in computation of the PMF for discrete events, and they are as
+follows:
+
+1) Bernoulli Distribution: This distribution is defined for discrete random variables that can only take two values,
+0 and 1 indicating success or failure. It is also called an indicator random variable, as it indicates whether
+an event will happen (kinda like a signal in stock market). The experiment associated with this is the coin toss.
+
+2) Geometric Distribution: This distribution is defined for a random experiment is repeated until the desired value of
+the random variable is achieved. The experiment associated with this type of distribution is when flipping a coin
+until a head or a tail is observed.
+
+3) Binomial Distribution: The experiment associated with this type of distribution is when we keep flipping a coin
+and want to get the probability of seeing a head n times. This is given by nCk, a combinatorial counting approach.
+
+4)
+
+
+

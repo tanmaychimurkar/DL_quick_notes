@@ -1,0 +1,27 @@
+There are two types of artificial neurons, the inhibitors and the exhibitors.
+
+If an inhibitor is activated, the output of the perceptron is always 0
+
+If exhibitors are activated, then we take the output as
+
+    f(g(x)), where g(x) is the sum of the values of all the activated neurons, and is 1 if the threshold is surpassed.
+
+The decision boundary of the perceptron is linear for `boolean inputs`, since for perceptron with thresholds, we take a
+sum of the input variables and then compare them to a threshold. However, the function itself should be linearly
+separable for this condition to hold.
+
+
+For the case when the inputs themselves are linear, we need a learning algorithm that can figure out the weights
+assigned to each neuron and the threshold over which to activate the response. For this, we can model the perceptron
+as follows:
+
+    [n: 1->n ]sum(wi*xi) >= theta <==> [n: 0->n]sum(wi*xi) >= 0, thus we assume that the threshold is also one of the
+    inputs, and we try to model it with the rest of the inputs.
+
+
+The weights and the bias depend on the data that we have. For example, if we take three inputs related to actor,
+director and the music composer, a movie buff will watch any movie, and thus the bias for the activation could be 0.
+For a very niche movie watcher, this bias could be 3. So this depends on the data that we have.
+
+
+Binary and continuous perceptrons both create a linear decision boundary.

@@ -1,0 +1,77 @@
+There are two common interpretations of the word "probability."
+
+One is in terms of relative frequency.
+In other words, if we flip the coin a very large number of times, it will come up heads about 1/2 of the time.
+As the number of coin flips increases, the proportion that come up heads will tend to get closer and closer to 1/2.
+This interpretation is dependent on the `law of large numbers`, and is part of the relative frequency approach.
+
+The second interpretation is the `belief that `something will happen`. Like estimating the probability that it will
+rain today. This belief may vary from person to person, and thus is harder to quantify.
+
+The application of probability theory is very heavy in the field of communication systems, wherein we do not know the
+probability of a noise being added to the information bits that are being transmitted by the phone when we are
+communicating.
+
+
+The universal set is called the sample space and is defined by `S`.
+
+The complement of a set is the set of all values that are in the sample space, excluding all the elements in set A.
+
+Sets are mutually exclusive or disjoint if their intersection is the null set.
+
+For sets, the main theorems that apply are the following:
+
+1) De morgan's law: The complement of unions of sets is intersection of individual complement of the each set. vice
+versa is also true
+
+2) Distrubutive law: The union or the intersection of sets can be distributive as the arithmetic operators.
+
+Probability functions map from domain to codomain, and have a range.
+
+For a random experiment, the set of outcomes that we get after repeated trials is our sample space, and it is also the
+universal set for the random experiment. But a sample space is still defined by the number of trials that are done for
+an experiment.
+
+For example, if the random experiment is tossing a coin once, then the outcome of a trial would either be {H} or {T}.
+If we toss a coin three times, then the outcome of the trail (or the sample space) would be {HHH}, {TTT}, {HTH}, etc.
+
+We often want the probability of an event of the sample space.
+
+If the events that occur are discrete, then we can compute the probability based on the number of occurences of the
+event for which we need the probability.
+
+In conditional probability, we take the probability with a `prior probability`, assuming that we know the probability
+of the event of the condition is known to us already.
+
+For conditional probability, think in the terms of two events A and B, wherein it is already assumed that event B has
+happened. Thus, the sample space is reduced to B. Then A has to be inside the sample space of B, and thus the
+conditional probability is given by taking a ratio of the area of the intersection of (A and B) divided by the reduced
+sample space B.
+
+Also, from the conditional probability theorem, we also get the chain rule, which shows the probability of events
+occurring together is the prior * conditional probability of each of the events that follow.
+
+The probabilities calculated from the chain rule and from the independence are different. In independence, we do not
+need to reduce the sample space, as the events themselves are all independent of each other, however, in chain rule,
+when we calculate the conditional probability, the sample space is reduced at every step of the conditional
+probability.
+
+The law of total probability defines that if we can divide our complete sample space in paritions, then we can find the
+probability of an event happening as the sum of conditional events over each partition where the event might have a
+change of occurring. This comes into play in the `bayes rule`, where in the denominator, the probability of an event
+occurring is the sum of the conditional probabilities events based on the law of total probability.
+
+We can also make an inference via the Bayes theorem, wherein we can check that the probability of a conditional event
+occurring is greater than or equal to the single conditional being chosen if the chosen conditional has the heightest
+number of samples inside it.
+
+We also have the notion of conditional independence, wherein we have the change of two events occurring based on an
+event C as the product of their conditional independence. Two or more events are conditionally independent given an
+external event C if the probability of all events except C happening together is independent of each other.
+
+We can calculate probability of conditional independent events the same way we can calculate the probability of
+conditional events, but keeping in mind the changes in sample space induced by the conditional event.
+
+
+
+
